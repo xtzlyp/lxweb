@@ -51,8 +51,7 @@
 					);
 			$Smysql = middle::load('mysql');
 			$res = $Smysql->table('countdata')->where($insertArr)->sel();
-print_r($res);	
-	//	return $res:1?false;	
+			print_r($res);	
 		}
 
 	}
