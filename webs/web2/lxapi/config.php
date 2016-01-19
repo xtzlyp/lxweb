@@ -1,11 +1,11 @@
 <?php
 	$__Config__ = array(
-			'tempConfig' => array(
+			
+		);
+	$__tempConfig__ = array(
 							'type' => 'smarty',
 							'left_delimiter' => '<{',
 							'right_delimiter' => '}>',
-							'tempFile' => 'templates'
-						)
-			 
-		);
+							'tempFile' => '../tpl'
+						);
 ?>
