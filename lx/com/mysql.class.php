@@ -11,7 +11,7 @@ class Mysql{
                 	self::$obj = new Mysql();
                 }
                 return self::$obj;
-	}	
+	}
 
 //	function __call(){
 		//$function = $function_name.'Action';

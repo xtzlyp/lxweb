@@ -5,4 +5,8 @@
 		
 	);
 
+	$memList = array(
+		'mem1' => array('host' => 'localhost' );, 
+	);
+
 ?>

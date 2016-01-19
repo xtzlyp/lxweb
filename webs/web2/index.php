@@ -3,4 +3,7 @@
 	$smarty = LxWeb::_Temp();
 	print_r($smarty);
 	$smarty->display('index.tpl');
+
+
+	
 ?>
