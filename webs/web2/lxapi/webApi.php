@@ -1,5 +1,5 @@
 <?php
-	include '../../../lx/lx.php';
+	include '../../../../lx/lx.php';
 	include 'config.php';
 	class LxWeb{
 		//设置模板返回模板实例
