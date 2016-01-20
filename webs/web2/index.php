@@ -2,8 +2,5 @@
 	include 'lxapi/webApi.php';
 	$smarty = LxWeb::_Temp();
 	print_r($smarty);
-	$smarty->display('index.tpl');
-
-
-	
+	$smarty->display('index.html');
 ?>
