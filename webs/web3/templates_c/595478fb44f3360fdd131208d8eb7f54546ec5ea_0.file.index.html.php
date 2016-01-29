@@ -1,11 +1,38 @@
+<?php
+/* Smarty version 3.1.29, created on 2016-01-20 16:29:21
+  from "C:\xing\php\11\1\lxweb\webs\web2\tpl\index.html" */
+
+if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
+  'has_nocache_code' => false,
+  'version' => '3.1.29',
+  'unifunc' => 'content_569f456195c114_35686735',
+  'file_dependency' => 
+  array (
+    '595478fb44f3360fdd131208d8eb7f54546ec5ea' => 
+    array (
+      0 => 'C:\\xing\\php\\11\\1\\lxweb\\webs\\web2\\tpl\\index.html',
+      1 => 1453278560,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_569f456195c114_35686735 ($_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <title>lx微信相册制作</title>
 <link href="/public/style/global.css" rel="stylesheet" type="text/css">
 <link href="/public/style/tps.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/public/style/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="/public/style/frame.js"></script>
+<?php echo '<script'; ?>
+ type="text/javascript" src="/public/style/jquery-1.10.2.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="/public/style/frame.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <div>
@@ -56,4 +83,5 @@
 	</div>
 </div>
 <div class="blank20"></div></div>
-</body></html>
+</body></html><?php }
+}

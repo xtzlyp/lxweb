@@ -1,11 +1,38 @@
+<?php
+/* Smarty version 3.1.29, created on 2016-01-20 16:32:23
+  from "C:\xing\php\11\1\lxweb\webs\web2\tpl\stage_4.html" */
+
+if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
+  'has_nocache_code' => false,
+  'version' => '3.1.29',
+  'unifunc' => 'content_569f46173b31b7_55795883',
+  'file_dependency' => 
+  array (
+    '3ec589df6057f935cafaacbbb55d0b0643ca9005' => 
+    array (
+      0 => 'C:\\xing\\php\\11\\1\\lxweb\\webs\\web2\\tpl\\stage_4.html',
+      1 => 1453278733,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_569f46173b31b7_55795883 ($_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <title>lx微信相册制作</title>
 <link href="/public/style/global.css" rel="stylesheet" type="text/css">
 <link href="/public/style/tps.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/public/style/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="/public/style/frame.js"></script>
+<?php echo '<script'; ?>
+ type="text/javascript" src="/public/style/jquery-1.10.2.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="/public/style/frame.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <div>
@@ -26,13 +53,13 @@
 <div class="r_con_wrap" id="flow">
 	<div class="blank20"></div>
 	<dl class="step" >
-		<a href="/index.php"><dt rel="0" class="cur"><h1>1</h1><h2>第一步</h2></dt></a>
+		<a href="/index.php"><dt rel="0" ><h1>1</h1><h2>第一步</h2></dt></a>
 		<dd></dd>
 		<a href="/stage_2.php"><dt rel="1"><h1>2</h1><h2>第二步</h2></dt></a>
 		<dd></dd>
 		<a href="/stage_3.php"><dt rel="2"><h1>3</h1><h2>第三步</h2></dt></a>
 		<dd></dd>
-		<a href="stage_4.php"><dt rel="3"><h1>4</h1><h2>完成</h2></dt></a>
+		<a href="stage_4.php"><dt rel="3" class="cur"><h1>4</h1><h2>完成</h2></dt></a>
 	</dl>
 	<div class="info">
 		<div class="setp_info" style="display: block;">
@@ -47,7 +74,6 @@
 								<a href="#" class='btn_sm'>预览<a>
 							</div>
 						</li>
-
 					<ul>
 				</div>
 			</div>
@@ -56,4 +82,5 @@
 	</div>
 </div>
 <div class="blank20"></div></div>
-</body></html>
+</body></html><?php }
+}

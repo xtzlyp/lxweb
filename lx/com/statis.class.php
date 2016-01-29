@@ -1,11 +1,10 @@
 <?php
-	#
-	# 统计组件
-	#
+/**
+ * 功能：数据统计插件
+ * 作者：xtzlyp
+ */
 	class Statis {
 		static private $obj;
-
-
 		static function init(){
 			if(!self::$obj){
 				self::$obj = new Statis();	
