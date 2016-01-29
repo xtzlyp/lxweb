@@ -47,6 +47,7 @@ class Mysql{
 
 
 	public function where($condition = array()){
+
 		if($condition){
 			$i = 0;
 			foreach($condition as $ke => $va){
@@ -57,8 +58,8 @@ class Mysql{
 				}
 				$i++;
 			}
+			$this->where = " where ".$where;
 		}
-		$this->where = $where;
 		return $this;
 	}
 
@@ -96,13 +97,12 @@ class Mysql{
 	private function makeSql($type = 1){
 		switch ($type) {
 			case 1:
-				//查询select
-				$sql = "select ".$this->sqlSet['file']." from ".$this->table."
-				 where ".$this->where." ".$this->sqlSet['order'].' '.$this->sqlSet['limit'];
+				# 查询select
+				$sql = "select ".$this->sqlSet['file']." from ".$this->table.$this->where." ".$this->sqlSet['order'].' '.$this->sqlSet['limit'];
 				break;
 			case 2:
-				//插入insert
-				//$sql = "insert into ".$this->table.' ('.implode(',',$first).') values ('.implode(',',$after).')';
+				# 查询select
+				$sql = "select count(*) from ".$this->table.$this->where;
 				break;
 			default:
 				# code...
@@ -129,7 +129,6 @@ class Mysql{
 	public function selectAll(){
 		if(!$this->table) die('table is not exit');
 		$sql = $this->makeSql(1);
-		echo $sql;
 		$result = $this->query($sql);
 		$arrList = array();
 		$row = array();
@@ -138,6 +137,23 @@ class Mysql{
 		}
 		return $arrList;
 	}
+
+	#
+	# 功能：查出总计数
+	#
+	public function count(){
+		if(!$this->table) die('table is not exit');
+		$sql = $this->makeSql(2);
+		$result = $this->query($sql);
+		$row = mysql_fetch_array($result);
+		if($row){
+			return $row[0];
+		}else{
+			print_r(mysql_error().':Sql='.$sql) ;
+			return false;
+		}
+	}
+
 
 	#
 	# 功能：插入
@@ -153,7 +169,8 @@ class Mysql{
 		if($result == 1){
 			return true;
 		}else{
-			return mysql_error().':Sql='.$sql;
+			print_r(mysql_error().':Sql='.$sql) ;
+			return false;
 		}
 	}
 
@@ -173,12 +190,13 @@ class Mysql{
 			}
 			$i++;
 		}
-		$sql = " update ".$this->table.' set '.$update.' where '.$this->where;
+		$sql = " update ".$this->table.' set '.$update.$this->where;
 		$result = $this->query($sql);
 		if($result == 1){
 			return true;
 		}else{
-			return mysql_error().':Sql='.$sql;
+			print_r(mysql_error().':Sql='.$sql) ;
+			return false;
 		}
 	}
 
@@ -187,12 +205,13 @@ class Mysql{
 	#
 	public function delete(){
 		if(!$this->table) die('table is not exit');
-		$sql = " delete from ".$this->table.' where '.$this->where;
+		$sql = " delete from ".$this->table.$this->where;
 		$result = $this->query($sql);
 		if($result == 1){
 			return true;
 		}else{
-			return mysql_error().':Sql='.$sql;
+			print_r(mysql_error().':Sql='.$sql) ;
+			return false;
 		}
 	}
 

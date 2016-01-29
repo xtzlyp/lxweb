@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-01-20 16:29:21
+/* Smarty version 3.1.29, created on 2016-01-29 16:13:36
   from "C:\xing\php\11\1\lxweb\webs\web2\tpl\index.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_569f456195c114_35686735',
+  'unifunc' => 'content_56ab1f30647754_21709423',
   'file_dependency' => 
   array (
     '595478fb44f3360fdd131208d8eb7f54546ec5ea' => 
     array (
       0 => 'C:\\xing\\php\\11\\1\\lxweb\\webs\\web2\\tpl\\index.html',
-      1 => 1453278560,
+      1 => 1454055212,
       2 => 'file',
     ),
   ),
@@ -19,69 +19,190 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_569f456195c114_35686735 ($_smarty_tpl) {
+function content_56ab1f30647754_21709423 ($_smarty_tpl) {
+if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\xing\\php\\11\\1\\lxweb\\lx\\view\\smarty\\plugins\\modifier.date_format.php';
 ?>
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<title>lx微信相册制作</title>
-<link href="/public/style/global.css" rel="stylesheet" type="text/css">
-<link href="/public/style/tps.css" rel="stylesheet" type="text/css">
-<?php echo '<script'; ?>
- type="text/javascript" src="/public/style/jquery-1.10.2.min.js"><?php echo '</script'; ?>
->
-<?php echo '<script'; ?>
- type="text/javascript" src="/public/style/frame.js"><?php echo '</script'; ?>
->
-</head>
-<body>
-<div>
-	<div class="header">
-    	<div class="leftheader" >
-        	<img class="logo" src="/public/img/logo.png">
-        </div>
-        <div class="rightheader">
-        	<img src="/public/img/back.png">
-            <span>回到首页</span>
-            <img src="/public/img/zhuce.png">
-            <span>注册</span>
-        </div>
-    </div>
-</div>
-<div id="iframe_page" >
-<link href="/public/style/app.css" rel="stylesheet" type="text/css">
-<div class="r_con_wrap" id="flow">
-	<div class="blank20"></div>
-	<dl class="step" >
-		<a href="/index.php"><dt rel="0" class="cur"><h1>1</h1><h2>第一步</h2></dt></a>
-		<dd></dd>
-		<a href="/stage_2.php"><dt rel="1"><h1>2</h1><h2>第二步</h2></dt></a>
-		<dd></dd>
-		<a href="/stage_3.php"><dt rel="2"><h1>3</h1><h2>第三步</h2></dt></a>
-		<dd></dd>
-		<a href="stage_4.php"><dt rel="3"><h1>4</h1><h2>完成</h2></dt></a>
-	</dl>
-	<div class="info">
-		<div class="setp_info" style="display: block;">
-			<h1 class="tips">选择模板</h1>
-			<div class="img">
-				<div class="teplist">
-					<ul>
-						<li>
-							<div class="d_img"><img src='/public/img/2.PNG' width="223px" height="359px" /></div>
-							<div>
-								<a href="#" class='btn_sm'>选择<a>
-								<a href="#" class='btn_sm'>预览<a>
-							</div>
-						</li>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta name="renderer" content="webkit" /> 
+  <title>微信素材_微信文章</title> 
+  <meta name="keywords" content="" /> 
+  <meta name="description" content="" /> 
+  <link href="/public/style/bootstrap.min.css" rel="stylesheet" /> 
+  <link href="/public/style/module.css" rel="stylesheet" /> 
+  <link href="/public/style/style.css" rel="stylesheet" /> 
+  <?php echo '<script'; ?>
+ src="/public/style/jquery-1.11.2.min.js" type="text/javascript"><?php echo '</script'; ?>
+> 
+ </head> 
+ <body> 
+  <div class="container-fluid"> 
+   <nav class="navbar navbar-fixed-top some-header"> 
+    <div class="container"> 
+     <div class="navbar-header"> 
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+      <a class="navbar-brand" href="/public/style/index.html"><img src="/public/style/logo.png" /></a> 
+     </div> 
+     
+    </div> 
+    <div class="container"> 
+     <div id="navbar" class="some-navbar navbar-collapse collapse"> 
+      <ul class="nav navbar-nav"> 
+       <li><a href="/public/style/index.html">首页</a></li> 
+       <li><a href="http://www.buyvnoble.com/subject/faith.html" class="active">信仰</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/thinking.html" class="active">思想</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/edu.html" class="active">教育</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/science.html" class="active">科学</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/art.html" class="active">美学</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/news.html" class="active">资讯</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/economy.html" class="active">财富</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/figure.html" class="active">人物</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/health.html" class="active">健康</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/read.html" class="active">读书</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/photo.html" class="active">图库</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/music.html" class="active">音乐</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/video.html" class="active">视频</a></li>
+       <li><a href="http://www.buyvnoble.com/subject/fun.html" class="active">趣味</a></li> 
+      </ul> 
+     </div> 
+    </div> 
+   </nav> 
+  </div> 
+  <div id="wrapper" class="container"> 
+   <div class="col-xs-12 col-sm-8"> 
+    <div class="panel"> 
+     <div class="panel-heading"> 
+      <span class="title">全部</span> 
+      <!-- <a class="fr" href="http://www.buyvnoble.com/subject/faith.html">全部</a>  -->
+     </div> 
+     <div class="panel-body subject-list"> 
+	 
+	 <?php
+$_from = $_smarty_tpl->tpl_vars['arcli']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_li_0_saved_item = isset($_smarty_tpl->tpl_vars['li']) ? $_smarty_tpl->tpl_vars['li'] : false;
+$_smarty_tpl->tpl_vars['li'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['li']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['li']->value) {
+$_smarty_tpl->tpl_vars['li']->_loop = true;
+$__foreach_li_0_saved_local_item = $_smarty_tpl->tpl_vars['li'];
+?>
+	<div class="subject"> 
+       <div class="col-xs-12 col-sm-4 subject-thumb fl"> 
+        <a class="thumbnail" href="/a/<?php echo $_smarty_tpl->tpl_vars['li']->value['id'];?>
+" title="【<?php echo $_smarty_tpl->tpl_vars['li']->value['shop_title'];?>
+_Tmall】<?php echo $_smarty_tpl->tpl_vars['li']->value['title'];?>
+" style="background-image:url(<?php echo $_smarty_tpl->tpl_vars['li']->value['shop_pic'];?>
+)"></a> 
+       </div> 
+       <div class="subject-title"> 
+        <h1><a href="/a/<?php echo $_smarty_tpl->tpl_vars['li']->value['id'];?>
+"><font style="font-size: 14px;font-weight: 500;">[<?php echo $_smarty_tpl->tpl_vars['li']->value['shop_title'];?>
+_Tmall]</font><?php echo $_smarty_tpl->tpl_vars['li']->value['title'];?>
+</a></h1> 
+       </div> 
+       <div class="subject-meta"> 
+        <span><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['li']->value['createtime'],'%Y-%m-%d %H:%M:%S');?>
+</span> 
+       </div> 
+     </div>
+	<?php
+$_smarty_tpl->tpl_vars['li'] = $__foreach_li_0_saved_local_item;
+}
+if ($__foreach_li_0_saved_item) {
+$_smarty_tpl->tpl_vars['li'] = $__foreach_li_0_saved_item;
+}
+?>
+	
+	<?php echo $_smarty_tpl->tpl_vars['page_data']->value;?>
 
-					<ul>
-				</div>
-			</div>
-		</div>
-		
-	</div>
-</div>
-<div class="blank20"></div></div>
-</body></html><?php }
+     </div> 
+    </div>
+   </div> 
+   <div class="col-xs-12 col-sm-4"> 
+    <div class="panel"> 
+     <div class="panel-heading"> 
+      <span class="title">热门推荐</span> 
+      <a class="more change-rec-mod fr" href="javascript:;" data-page="1">换一换 <i class="fa fa-refresh"></i></a>
+     </div> 
+     <div class="panel-body"> 
+      <ul class="widget-list widget-recommends">
+        <?php
+$_from = $_smarty_tpl->tpl_vars['rightFirst']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_ri_1_saved_item = isset($_smarty_tpl->tpl_vars['ri']) ? $_smarty_tpl->tpl_vars['ri'] : false;
+$__foreach_ri_1_saved_key = isset($_smarty_tpl->tpl_vars['key']) ? $_smarty_tpl->tpl_vars['key'] : false;
+$_smarty_tpl->tpl_vars['ri'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['key'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['ri']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['key']->value => $_smarty_tpl->tpl_vars['ri']->value) {
+$_smarty_tpl->tpl_vars['ri']->_loop = true;
+$__foreach_ri_1_saved_local_item = $_smarty_tpl->tpl_vars['ri'];
+?>
+	   <li><a href="" class="num"><?php echo $_smarty_tpl->tpl_vars['key']->value+1;?>
+</a><a href="" title="[<?php echo $_smarty_tpl->tpl_vars['ri']->value['shop_title'];?>
+_Tmall]<?php echo $_smarty_tpl->tpl_vars['li']->value['title'];?>
+">[<?php echo $_smarty_tpl->tpl_vars['ri']->value['shop_title'];?>
+_Tmall]<?php echo $_smarty_tpl->tpl_vars['ri']->value['title'];?>
+</a></li>
+		<?php
+$_smarty_tpl->tpl_vars['ri'] = $__foreach_ri_1_saved_local_item;
+}
+if ($__foreach_ri_1_saved_item) {
+$_smarty_tpl->tpl_vars['ri'] = $__foreach_ri_1_saved_item;
+}
+if ($__foreach_ri_1_saved_key) {
+$_smarty_tpl->tpl_vars['key'] = $__foreach_ri_1_saved_key;
+}
+?>
+	  </ul> 
+     </div> 
+    </div> 
+   <div class="panel"> 
+     <div class="panel-heading">
+      <span class="title">今日热搜</span> 
+      <a class="fr" href="#">更多</a>
+     </div> 
+     <div class="panel-body"> 
+      <ul class="widget-list widget-tags"> 
+       <li><a href="#" style="background-color:rgb(170,228,191)">中国</a></li>
+        </ul> 
+     </div> 
+    </div> 
+    <div class="panel"> 
+     <div class="panel-heading">
+      <span class="title">热门栏目</span>
+     </div> 
+     <div class="panel-body"> 
+      <ul class="widget-list widget-thumb"> 
+       <li> <a href="#"" class="fl"><img src="/public/style/faith.jpg" alt="" /></a> <p><a href=""><strong>信仰</strong></a> <a class="btn btn-xs btn-some btn-feed fr" href="" data-id="7" data-type="forum">订阅</a> </p> <p>希拉里说，中国是世界上少数没有信仰的可怕国家之一。民族没有信仰，道德滑坡就是必然的，腐败就是必然的。 </p> </li>
+       </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="col-xs-12 col-sm-12 main"> 
+    <div class="panel"> 
+     <div class="panel-heading">
+      友情链接
+     </div> 
+     <div class="panel-body links"> 
+      <ul class="widget-list widget-tags"> 
+       <li><a href="http://www.baidu.com/" target="_blank" >百度首页</a></li>
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div id="wx-qrcode"></div> 
+ </body>
+</html><?php }
 }

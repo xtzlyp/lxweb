@@ -6,7 +6,7 @@
 	class Page{
 		static $obj;
 		private $total;  //总记录
-		private $limit;  //limit 条件
+		public  $limit;  //limit 条件
 		private $page;   //当前页码
 		private $pagenum;	//总页码
 		private $url;	//地址
@@ -25,7 +25,7 @@
 			$this->linkdata = $linkdata;  
 			$this->pagenum = ceil($this->total / $this->pagesize);  
 			$this->page = $this->setPage();  
-			$this->limit = "LIMIT ".($this->page-1)*$this->pagesize.",$this->pagesize";  
+			$this->limit = ($this->page-1)*$this->pagesize.",$this->pagesize";  
 			$this->url = $this->setUrl();  
 			$this->bothnum = $bothnum;
 		}
