@@ -1,6 +1,6 @@
 <?php
 	$dbList = array(
-		'db1'=>array('host'=>'121.40.144.140','username'=>'root','psd'=>'xtzlyp','dbname'=>'xtzlyp'),
+		'db1'=>array('host'=>'123111','username'=>'root','psd'=>'root','dbname'=>'xtzlyp'),
 			
 		
 	);
