@@ -1,4 +1,3 @@
-<meta http-equiv="content-type" content="text/html;charset=utf-8">
 <?php
 /*
  * 给添加数据工具  访问http://task.csdfg.com/1.php

@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteRule a/([0-9]{1,})$ /a.php?pid=$1
+	RewriteRule page/([0-9]{1,})$ /index.php?page=$1
+	RewriteRule l/([0-9]{1,})$ /l.php?list=$1
+</IfModule>
+ 

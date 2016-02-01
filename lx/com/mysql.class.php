@@ -120,6 +120,7 @@ class Mysql{
 		$result = $this->query($sql);
 		$row = array();
 		$row = mysql_fetch_assoc($result);
+		$this->where = '';
 		return $row;
 	}
 
@@ -135,6 +136,7 @@ class Mysql{
 		while ( $row = mysql_fetch_assoc($result)) {
 			$arrList[] = $row;
 		}
+		$this->where = '';
 		return $arrList;
 	}
 

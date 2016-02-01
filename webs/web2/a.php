@@ -1,20 +1,21 @@
 <?php
+/*
+ * 内容详细页面
+ */
 	include 'lxapi/webApi.php';
 	$smarty = LxWeb::_Temp();
 	$db = middle::load('mysql');//加载middle中的load自动加载方法
 	$db ->loadSql('db1',1);
-
-	$count = $db->table('a_tmall_wx')->count();
-	$page = middle::load('page');
-	$page->setConf($count,20,'page/',5);
-	$page_data = $page->showpage();
-	$arcList = $db->table('a_tmall_wx')->order('id desc')->setFiles(array('title','id','shop_title','createtime','shop_pic'))->limit($page->limit)->selectAll();
+	$arcInfo = $db->table('a_tmall_wx')
+	->where(array('id' =>intval($_GET['pid'])))->selectOne();
+	if(!$arcInfo){
+		die();
+	}
+	//print_r($arcInfo);
 	$rightFirst = getRand(15);
 	$smarty->assign('rightFirst',$rightFirst);
-	$smarty->assign('arcli',$arcList);
-	$smarty->assign('page_data',$page_data);
-	$smarty->display('index.html');
-
+	$smarty->assign('arcInfo',$arcInfo);
+	$smarty->display('a.html');
 
 
 	function getRand($limit = 10){

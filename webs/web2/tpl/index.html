@@ -26,22 +26,20 @@
     </div> 
     <div class="container"> 
      <div id="navbar" class="some-navbar navbar-collapse collapse"> 
-      <ul class="nav navbar-nav"> 
-       <li><a href="/public/style/index.html">首页</a></li> 
-       <li><a href="http://www.buyvnoble.com/subject/faith.html" class="active">信仰</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/thinking.html" class="active">思想</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/edu.html" class="active">教育</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/science.html" class="active">科学</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/art.html" class="active">美学</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/news.html" class="active">资讯</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/economy.html" class="active">财富</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/figure.html" class="active">人物</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/health.html" class="active">健康</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/read.html" class="active">读书</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/photo.html" class="active">图库</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/music.html" class="active">音乐</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/video.html" class="active">视频</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/fun.html" class="active">趣味</a></li> 
+       <ul class="nav navbar-nav"> 
+       <li><a href="/">首页</a></li> 
+        <li class="active"><a href="/l/1" class="active">推荐</a></li>
+       <li><a href="/l/2" class="active">思想</a></li>
+       <li><a href="/l/3" class="active">教育</a></li>
+       <li><a href="/l/4" class="active">科学</a></li>
+       <li><a href="/l/5" class="active">美学</a></li>
+       <li><a href="/l/6" class="active">资讯</a></li>
+       <li><a href="/l/7" class="active">财富</a></li>
+       <li><a href="/l/8" class="active">人物</a></li>
+       <li><a href="/l/9" class="active">健康</a></li>
+       <li><a href="/l/10" class="active">读书</a></li>
+       <li><a href="/l/11" class="active">图库</a></li>
+       <li><a href="/l/12" class="active">趣味</a></li> 
       </ul> 
      </div> 
     </div> 
@@ -83,7 +81,7 @@
      <div class="panel-body"> 
       <ul class="widget-list widget-recommends">
         <{foreach from=$rightFirst item=ri  key=key}>
-	   <li><a href="" class="num"><{$key+1}></a><a href="" title="[<{$ri.shop_title}>_Tmall]<{$li.title}>">[<{$ri.shop_title}>_Tmall]<{$ri.title}></a></li>
+	   <li><a href="" class="num"><{$key+1}></a><a href="/a/<{$ri.id}>" title="[<{$ri.shop_title}>_Tmall]<{$li.title}>">[<{$ri.shop_title}>_Tmall]<{$ri.title}></a></li>
 		<{/foreach}>
 	  </ul> 
      </div> 

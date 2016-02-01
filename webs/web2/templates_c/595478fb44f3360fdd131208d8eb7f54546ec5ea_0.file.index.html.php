@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-01-29 16:13:36
+/* Smarty version 3.1.29, created on 2016-02-01 17:57:10
   from "C:\xing\php\11\1\lxweb\webs\web2\tpl\index.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_56ab1f30647754_21709423',
+  'unifunc' => 'content_56af2bf6e8c6e4_59351920',
   'file_dependency' => 
   array (
     '595478fb44f3360fdd131208d8eb7f54546ec5ea' => 
     array (
       0 => 'C:\\xing\\php\\11\\1\\lxweb\\webs\\web2\\tpl\\index.html',
-      1 => 1454055212,
+      1 => 1454320610,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_56ab1f30647754_21709423 ($_smarty_tpl) {
+function content_56af2bf6e8c6e4_59351920 ($_smarty_tpl) {
 if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\xing\\php\\11\\1\\lxweb\\lx\\view\\smarty\\plugins\\modifier.date_format.php';
 ?>
 <!DOCTYPE html>
@@ -52,22 +52,20 @@ if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\xing\\php\\11
     </div> 
     <div class="container"> 
      <div id="navbar" class="some-navbar navbar-collapse collapse"> 
-      <ul class="nav navbar-nav"> 
-       <li><a href="/public/style/index.html">首页</a></li> 
-       <li><a href="http://www.buyvnoble.com/subject/faith.html" class="active">信仰</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/thinking.html" class="active">思想</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/edu.html" class="active">教育</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/science.html" class="active">科学</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/art.html" class="active">美学</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/news.html" class="active">资讯</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/economy.html" class="active">财富</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/figure.html" class="active">人物</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/health.html" class="active">健康</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/read.html" class="active">读书</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/photo.html" class="active">图库</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/music.html" class="active">音乐</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/video.html" class="active">视频</a></li>
-       <li><a href="http://www.buyvnoble.com/subject/fun.html" class="active">趣味</a></li> 
+       <ul class="nav navbar-nav"> 
+       <li><a href="/">首页</a></li> 
+        <li class="active"><a href="/l/1" class="active">推荐</a></li>
+       <li><a href="/l/2" class="active">思想</a></li>
+       <li><a href="/l/3" class="active">教育</a></li>
+       <li><a href="/l/4" class="active">科学</a></li>
+       <li><a href="/l/5" class="active">美学</a></li>
+       <li><a href="/l/6" class="active">资讯</a></li>
+       <li><a href="/l/7" class="active">财富</a></li>
+       <li><a href="/l/8" class="active">人物</a></li>
+       <li><a href="/l/9" class="active">健康</a></li>
+       <li><a href="/l/10" class="active">读书</a></li>
+       <li><a href="/l/11" class="active">图库</a></li>
+       <li><a href="/l/12" class="active">趣味</a></li> 
       </ul> 
      </div> 
     </div> 
@@ -149,7 +147,8 @@ $_smarty_tpl->tpl_vars['ri']->_loop = true;
 $__foreach_ri_1_saved_local_item = $_smarty_tpl->tpl_vars['ri'];
 ?>
 	   <li><a href="" class="num"><?php echo $_smarty_tpl->tpl_vars['key']->value+1;?>
-</a><a href="" title="[<?php echo $_smarty_tpl->tpl_vars['ri']->value['shop_title'];?>
+</a><a href="/a/<?php echo $_smarty_tpl->tpl_vars['ri']->value['id'];?>
+" title="[<?php echo $_smarty_tpl->tpl_vars['ri']->value['shop_title'];?>
 _Tmall]<?php echo $_smarty_tpl->tpl_vars['li']->value['title'];?>
 ">[<?php echo $_smarty_tpl->tpl_vars['ri']->value['shop_title'];?>
 _Tmall]<?php echo $_smarty_tpl->tpl_vars['ri']->value['title'];?>
